@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="882.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab4.СalculatorController">
+   <children>
+      <Button fx:id="but_7" focusTraversable="false" layoutX="515.0" layoutY="237.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="7">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_8" focusTraversable="false" layoutX="644.0" layoutY="237.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="8">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_9" focusTraversable="false" layoutX="773.0" layoutY="237.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="9">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_4" focusTraversable="false" layoutX="515.0" layoutY="366.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="4">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_5" focusTraversable="false" layoutX="644.0" layoutY="366.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="5">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_6" focusTraversable="false" layoutX="773.0" layoutY="366.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="6">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_1" focusTraversable="false" layoutX="515.0" layoutY="495.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="1">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_2" focusTraversable="false" layoutX="644.0" layoutY="495.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="2">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_3" focusTraversable="false" layoutX="773.0" layoutY="495.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="3">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_0" focusTraversable="false" layoutX="515.0" layoutY="624.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="0">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_point" focusTraversable="false" layoutX="773.0" layoutY="624.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text=".">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_DD" focusTraversable="false" layoutX="515.0" layoutY="108.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="D" textAlignment="CENTER" AnchorPane.bottomAnchor="645.0" AnchorPane.leftAnchor="515.0" AnchorPane.topAnchor="108.0">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_left" focusTraversable="false" layoutX="644.0" layoutY="108.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="(">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_right" focusTraversable="false" layoutX="773.0" layoutY="108.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text=")">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="put_plus" focusTraversable="false" layoutX="902.0" layoutY="108.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="+">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_minus" focusTraversable="false" layoutX="902.0" layoutY="237.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="-">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_mult" focusTraversable="false" layoutX="902.0" layoutY="366.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="*">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_div" focusTraversable="false" layoutX="902.0" layoutY="495.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="/">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_pow" focusTraversable="false" layoutX="902.0" layoutY="624.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="^">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_del" focusTraversable="false" layoutX="515.0" layoutY="753.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="387.0" text="DELETE">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_res" focusTraversable="false" layoutX="902.0" layoutY="753.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="129.0" text="=">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_sin" focusTraversable="false" layoutY="108.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="SIN">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_cos" focusTraversable="false" layoutX="257.0" layoutY="108.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="COS">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_tg" focusTraversable="false" layoutY="237.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="TG">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_ctg" focusTraversable="false" layoutX="257.0" layoutY="237.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="CTG">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_asin" focusTraversable="false" layoutY="366.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="ASIN">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_acos" focusTraversable="false" layoutX="257.0" layoutY="366.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="ACOS">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_atg" focusTraversable="false" layoutY="495.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="ATG">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_actg" focusTraversable="false" layoutX="258.0" layoutY="495.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="ACTG">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_exp" focusTraversable="false" layoutY="624.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="EXP">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_ln" focusTraversable="false" layoutX="258.0" layoutY="624.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="LN">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_lg" focusTraversable="false" layoutY="753.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="LG">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_pi" focusTraversable="false" layoutX="258.0" layoutY="753.0" mnemonicParsing="false" onAction="#createAlgebraString" prefHeight="129.0" prefWidth="258.0" text="PI">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Button>
+      <TextField fx:id="resultField" alignment="CENTER_RIGHT" layoutX="1.0" prefHeight="108.0" prefWidth="1030.0" promptText="Результат">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

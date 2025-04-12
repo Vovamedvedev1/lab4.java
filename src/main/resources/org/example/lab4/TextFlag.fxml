@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="373.0" prefWidth="1348.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab4.TextFlagController">
+   <children>
+      <Label layoutX="589.0" layoutY="14.0" prefHeight="45.0" prefWidth="238.0" style="-fx-background-color: #0000ff; -fx-background-radius: 15;" text="Текстовый флаг" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="69.0" prefHeight="200.0" prefWidth="314.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="317.0" style="-fx-background-color: #ffa500; -fx-background-radius: 10;" text="Выберете цвет верхней полосы?" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="Красный">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="groupTop" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Синий" toggleGroup="$groupTop">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Зеленый" toggleGroup="$groupTop">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Желтый" toggleGroup="$groupTop">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Оранжевый" toggleGroup="$groupTop">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Розовый" toggleGroup="$groupTop">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="163.0" text="Коричневый" toggleGroup="$groupTop">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Бордовый" toggleGroup="$groupTop">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+      <VBox layoutX="335.0" layoutY="69.0" prefHeight="200.0" prefWidth="314.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="317.0" style="-fx-background-color: #ffa500; -fx-background-radius: 10;" text="Выберете цвет средней полосы?" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="Красный">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="groupMiddle" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Синий" toggleGroup="$groupMiddle">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Зеленый" toggleGroup="$groupMiddle">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Желтый" toggleGroup="$groupMiddle">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Оранжевый" toggleGroup="$groupMiddle">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Розовый" toggleGroup="$groupMiddle">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="163.0" text="Коричневый" toggleGroup="$groupMiddle">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Бордовый" toggleGroup="$groupMiddle">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+      <VBox layoutX="657.0" layoutY="69.0" prefHeight="200.0" prefWidth="314.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="317.0" style="-fx-background-color: #ffa500; -fx-background-radius: 10;" text="Выберете цвет нижней полосы?" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="Красный">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="groupBot" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Синий" toggleGroup="$groupBot">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Зеленый" toggleGroup="$groupBot">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Желтый" toggleGroup="$groupBot">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Оранжевый" toggleGroup="$groupBot">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Розовый" toggleGroup="$groupBot">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="163.0" text="Коричневый" toggleGroup="$groupBot">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Бордовый" toggleGroup="$groupBot">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+      <Button fx:id="resultButton" layoutX="977.0" layoutY="315.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="183.0" style="-fx-background-color: #ff0000;" text="Нарисовать " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <VBox layoutX="977.0" layoutY="69.0" prefHeight="81.0" prefWidth="355.0">
+         <children>
+            <Rectangle fx:id="topFlag" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="61.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
+            <Rectangle fx:id="middleFlag" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="61.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
+            <Rectangle fx:id="botFlag" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="61.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
+         </children>
+      </VBox>
+      <Label fx:id="labelResult" layoutX="977.0" layoutY="265.0" prefHeight="37.0" prefWidth="355.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="clearButton" layoutX="1184.0" layoutY="315.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #ff0000;" text="Очистить" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

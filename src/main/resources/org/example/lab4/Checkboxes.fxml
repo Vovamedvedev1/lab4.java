@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainScene" prefHeight="291.0" prefWidth="1031.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab4.CheckboxesController">
+   <children>
+      <CheckBox fx:id="check1" layoutX="14.0" layoutY="36.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="255.0" text="Показать прогресс">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="check2" layoutX="10.0" layoutY="172.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="264.0" text="Показать календарь">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="check3" layoutX="14.0" layoutY="254.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="264.0" text="Показать ссылку">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </CheckBox>
+      <Group fx:id="group1" layoutX="266.0" layoutY="50.0">
+         <children>
+            <Label fx:id="labelProc" layoutX="14.0" layoutY="-15.0" prefHeight="34.0" prefWidth="705.0" text="Укажите процент выполнения:">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputProc" layoutX="367.0" layoutY="-12.0" promptText="Процент">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="buttonProc" layoutX="558.0" layoutY="-14.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="196.0" text="Отобразить">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ProgressBar fx:id="progressProc" layoutX="14.0" layoutY="28.0" prefHeight="30.0" prefWidth="740.0" progress="0.0" />
+         </children>
+      </Group>
+      <Group fx:id="group3" layoutX="278.0" layoutY="241.0">
+         <children>
+            <Label fx:id="labelKemSU" layoutY="13.0" text="Сайт КемГУ">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="linkKemSU" layoutX="132.0" layoutY="8.0" prefHeight="44.0" prefWidth="378.0" text="https://kemsu.ru/">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Group>
+      <Group fx:id="group2" layoutX="280.0" layoutY="171.0">
+         <children>
+            <DatePicker fx:id="dateCalendar" layoutY="4.0" prefHeight="34.0" prefWidth="255.0" promptText="Выбор даты" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
