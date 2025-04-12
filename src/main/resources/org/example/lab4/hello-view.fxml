@@ -6,9 +6,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab4.HelloController">
    <children>
-      <Button fx:id="TheWordShifter" layoutX="31.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#clickOnMenuButton" prefHeight="80.0" prefWidth="363.0" style="-fx-background-color: ffa500;" text="Перекидыватель слов" textFill="#00000096">
+      <Button fx:id="TheWordShifter" layoutX="31.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#clickOnMenuButton" prefHeight="80.0" prefWidth="363.0" style="-fx-background-color: ffa500;" text="Перекидыватель слов" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="20.0" />
+            <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
       <Button fx:id="Checkboxes" layoutX="404.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#clickOnMenuButton" prefHeight="80.0" prefWidth="363.0" style="-fx-background-color: ffa500;" text="Чекбоксы" textAlignment="RIGHT" textFill="WHITE">
